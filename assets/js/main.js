@@ -19,7 +19,7 @@
   function checkEquality(pwInputVal, pwConfirmVal) {
     const equalCheck = document.querySelector("#equal-check");
 
-    if (pwInputVal === pwConfirmVal) {
+    if (pwInputVal === pwConfirmVal && pwInputVal !== "") {
       equalCheck.classList.add("check-passed");
       checkLowerCase(pwInputVal);
       checkUpperCase(pwInputVal);
@@ -73,13 +73,18 @@
     }
   }
 
-  function togglePwDisplay() {
-    pwInput.getAttribute("type") === "password"
-      ? pwInput.setAttribute("type", "text")
-      : pwInput.setAttribute("type", "password");
-
-    pwConfirm.getAttribute("type") === "password"
-      ? pwConfirm.setAttribute("type", "text")
-      : pwConfirm.setAttribute("type", "password");
+  function togglePwDisplay(e) {
+    if (
+      pwInput.getAttribute("type") === "password" &&
+      pwConfirm.getAttribute("type") === "password"
+    ) {
+      pwInput.setAttribute("type", "text");
+      pwConfirm.setAttribute("type", "text");
+      e.target.textContent = "Hide Passwords";
+    } else {
+      pwInput.setAttribute("type", "password");
+      pwConfirm.setAttribute("type", "password");
+      e.target.textContent = "Show Passwords";
+    }
   }
 })();

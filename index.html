@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Check</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Password Check</h1>
+    </header>
+
+    <main class="main-content">
+      <section class="content-section pw-inputs">
+        <input type="password" name="password" id="password-input" />
+        <input type="password" name="password-confirm" id="password-confirm" />
+        <button class="btn btn--display-toggle" id="pw-display-toggle">
+          Show Passwords
+        </button>
+      </section>
+
+      <section class="content-section pw-checks">
+        <ul class="pw-checklist">
+          <li class="pw-checklist__item">
+            Passwords are equal
+            <span class="pw-checklist__icon icon--check-failed">❌</span>
+            <span class="pw-checklist__icon icon--check-passed">✅</span>
+          </li>
+          <li class="pw-checklist__item">
+            Lower case letters
+            <span class="pw-checklist__icon icon--check-failed">❌</span>
+            <span class="pw-checklist__icon icon--check-passed">✅</span>
+          </li>
+          <li class="pw-checklist__item">
+            Upper case letters
+            <span class="pw-checklist__icon icon--check-failed">❌</span>
+            <span class="pw-checklist__icon icon--check-passed">✅</span>
+          </li>
+          <li class="pw-checklist__item">
+            Contains numbers
+            <span class="pw-checklist__icon icon--check-failed">❌</span>
+            <span class="pw-checklist__icon icon--check-passed">✅</span>
+          </li>
+          <li class="pw-checklist__item">
+            At least 10 characters long
+            <span class="pw-checklist__icon icon--check-failed">❌</span>
+            <span class="pw-checklist__icon icon--check-passed">✅</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">This is a footer.</footer>
+  </body>
+</html>

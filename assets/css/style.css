@@ -1,0 +1,73 @@
+:root {
+  --bg: lightsalmon;
+  --headline: "Lobster", sans-serif;
+  --copytext: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: var(--copytext);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 5vmin;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headline);
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 3px 3px #000;
+}
+
+input,
+button {
+  border-radius: 2px;
+  border: 2px solid #000;
+}
+
+input {
+  margin-bottom: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main-content,
+.content-section {
+  padding: 2vmin;
+}
+
+.pw-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn--display-toggle {
+  background-color: #000;
+  color: #fff;
+}
+
+.pw-checklist {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  font-size: 1.25rem;
+}
+
+.icon--check-passed {
+  display: none;
+}

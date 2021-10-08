@@ -47,7 +47,7 @@ button {
 
 .main-content,
 .content-section {
-  padding: 2vmin;
+  padding: 1rem 5vmin;
 }
 
 .pw-inputs {
@@ -65,9 +65,14 @@ button {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
-  font-size: 1.25rem;
 }
 
 .icon--check-passed {
   display: none;
+}
+
+@media screen and (min-width: 701px) {
+  .main-content {
+    display: flex;
+  }
 }

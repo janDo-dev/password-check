@@ -39,6 +39,7 @@ button {
 
 input {
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 
 button {
@@ -69,6 +70,14 @@ button {
 
 .icon--check-passed {
   display: none;
+}
+
+.check-passed .icon--check-failed {
+  display: none;
+}
+
+.check-passed .icon--check-passed {
+  display: inline;
 }
 
 @media screen and (min-width: 701px) {

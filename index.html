@@ -21,8 +21,8 @@
 
     <main class="main-content">
       <section class="content-section pw-inputs">
-        <input type="password" name="password" id="password-input" />
-        <input type="password" name="password-confirm" id="password-confirm" />
+        <input type="password" name="password" id="pw-input" />
+        <input type="password" name="password-confirm" id="pw-confirm" />
         <button class="btn btn--display-toggle" id="pw-display-toggle">
           Show Passwords
         </button>
@@ -30,35 +30,41 @@
 
       <section class="content-section pw-checks">
         <ul class="pw-checklist">
-          <li class="pw-checklist__item">
+          <li class="pw-checklist__item" id="equal-check">
             Passwords are equal
             <span class="pw-checklist__icon icon--check-failed">❌</span>
             <span class="pw-checklist__icon icon--check-passed">✅</span>
           </li>
-          <li class="pw-checklist__item">
+          <li class="pw-checklist__item check-failed" id="lower-case-check">
             Lower case letters
             <span class="pw-checklist__icon icon--check-failed">❌</span>
             <span class="pw-checklist__icon icon--check-passed">✅</span>
           </li>
-          <li class="pw-checklist__item">
+          <li class="pw-checklist__item check-failed" id="upper-case-check">
             Upper case letters
             <span class="pw-checklist__icon icon--check-failed">❌</span>
             <span class="pw-checklist__icon icon--check-passed">✅</span>
           </li>
-          <li class="pw-checklist__item">
+          <li class="pw-checklist__item check-failed" id="numbers-check">
             Contains numbers
             <span class="pw-checklist__icon icon--check-failed">❌</span>
             <span class="pw-checklist__icon icon--check-passed">✅</span>
           </li>
-          <li class="pw-checklist__item">
+          <li class="pw-checklist__item check-failed" id="length-check">
             At least 10 characters long
-            <span class="pw-checklist__icon icon--check-failed">❌</span>
-            <span class="pw-checklist__icon icon--check-passed">✅</span>
+            <span class="pw-checklist__icon icon--check-failed icon-show"
+              >❌</span
+            >
+            <span class="pw-checklist__icon icon--check-passed icon-hide"
+              >✅</span
+            >
           </li>
         </ul>
       </section>
     </main>
 
     <footer class="site-footer">This is a footer.</footer>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

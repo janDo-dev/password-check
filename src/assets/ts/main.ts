@@ -1,7 +1,7 @@
 (function () {
   init();
 
-  function init() {
+  function init(): void {
     const pwInput: HTMLInputElement = document.querySelector("#pw-input");
     const pwConfirm: HTMLInputElement = document.querySelector("#pw-confirm");
     const pwDisplayToggle: HTMLInputElement =
@@ -12,7 +12,7 @@
     pwDisplayToggle.addEventListener("click", togglePwDisplay);
   }
 
-  function passwordCheck() {
+  function passwordCheck(): void {
     const pwInput: HTMLInputElement = document.querySelector("#pw-input");
     const pwConfirm: HTMLInputElement = document.querySelector("#pw-confirm");
     const pwInputVal: string = pwInput.value.trim();
@@ -21,7 +21,7 @@
     checkEquality(pwInputVal, pwConfirmVal);
   }
 
-  function checkEquality(pwInputVal: string, pwConfirmVal: string) {
+  function checkEquality(pwInputVal: string, pwConfirmVal: string): void {
     const equalCheck = document.querySelector("#equal-check");
 
     if (pwInputVal === pwConfirmVal && pwInputVal !== "") {
@@ -38,7 +38,7 @@
     }
   }
 
-  function checkLowerCase(pwInputVal: string) {
+  function checkLowerCase(pwInputVal: string): void {
     const lowerCaseCheck: HTMLElement =
       document.querySelector("#lower-case-check");
 
@@ -49,7 +49,7 @@
     }
   }
 
-  function checkUpperCase(pwInputVal: string) {
+  function checkUpperCase(pwInputVal: string): void {
     const upperCaseCheck: HTMLElement =
       document.querySelector("#upper-case-check");
 
@@ -60,7 +60,7 @@
     }
   }
 
-  function checkNumbers(pwInputVal: string) {
+  function checkNumbers(pwInputVal: string): void {
     const numbersCheck: HTMLElement = document.querySelector("#numbers-check");
 
     if (/\d/.test(pwInputVal)) {
@@ -70,7 +70,7 @@
     }
   }
 
-  function checkLength(pwInputVal: string) {
+  function checkLength(pwInputVal: string): void {
     const lengthCheck: HTMLElement = document.querySelector("#length-check");
 
     if (pwInputVal.length >= 10) {
@@ -80,7 +80,7 @@
     }
   }
 
-  function togglePwDisplay() {
+  function togglePwDisplay(): void {
     const pwInput: HTMLInputElement = document.querySelector("#pw-input");
     const pwConfirm: HTMLInputElement = document.querySelector("#pw-confirm");
     const pwDisplayToggle: HTMLInputElement =

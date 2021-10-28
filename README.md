@@ -2,4 +2,6 @@
 
 ## Usage
 
-`npm install` => `npm start`
+`npm install` => `npm start`  
+or  
+`npm install` => `npm run build` => `npm run serve`
